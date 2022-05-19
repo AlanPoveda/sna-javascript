@@ -1,3 +1,10 @@
+/**
+ * Nome: Alan Poveda
+ * Data: 19-05-2022
+ * Lab: 03
+ */
+
+
 // Esta função, quando o botão é clicado, ele pega o valor digitado no prompt e dois executa a função para verificar o valor digitado.
 function selectButton(){
     const nameUser = window.prompt("what's your name?")
