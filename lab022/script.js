@@ -1,4 +1,4 @@
-
+// Coloquei apostrofe na linha 12 que estava faltando
 function contar() {
     let saida = document.getElementById('saida')
 
@@ -9,7 +9,7 @@ function contar() {
         if (cont % 2 == 0) {
             saida.innerHTML += `<mark><strong> ${cont} </strong></mark>&#x1F449;`    
         } else {
-            saida.innerHTML +=  ${cont} &#x1F449;`
+            saida.innerHTML +=  `${cont} &#x1F449;`
         }
         cont ++ // Corresponde a cont = cont + 1
     }
