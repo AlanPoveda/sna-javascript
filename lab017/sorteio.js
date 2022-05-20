@@ -9,7 +9,11 @@ function gerar() {
     let res = document.querySelector('section#result')
     res.innerHTML += `<p>Acabei de pensar no número <mark>${num}</mark>!</p>`
 
-    limpar() { // Essa é a funcionalidade do outro botão, pra limpar tudo
+    
+}
+
+// Separei a função, para poder ser executado
+function limpar() { // Essa é a funcionalidade do outro botão, pra limpar tudo
     let res = document.querySelector('section#result')
     res.innerHTML = null // Vai esvaziar a section toda
 }
