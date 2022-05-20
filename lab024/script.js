@@ -1,4 +1,4 @@
-
+// Já esta funcionando
 function contar() {
     saida = document.getElementById('saida')
 
