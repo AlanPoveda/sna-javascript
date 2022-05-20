@@ -14,6 +14,7 @@ function acao3() {
     resp.innerHTML = '<p>Clicou no terceiro botão</p>'
 }
 
+// Tirei o += e troquei a informação do p
 function acao4() {
-    resp.innerHTML += '<p>Clicou no botão</p>'
+    resp.innerHTML = '<p>Clicou no quarto botão</p>'
 }
