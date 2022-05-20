@@ -1,7 +1,10 @@
 
 function maior() {
 
+    // Foi adicionado o n1
+    let n1 = Number(window.prompt('Digite outro número: '))
     let n2 = Number(window.prompt('Digite outro número: '))
+
     
     let res = document.querySelector('section#saida')
     if (n1 > n2) {
