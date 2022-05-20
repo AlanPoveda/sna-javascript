@@ -11,7 +11,9 @@ function media() {
     } else { // senão...
         msg = 'Estude um pouco mais!'
     }
-}
+    // Tirei } que tinha a mais aqui no código
+
+
     // O if é uma estrutura que cria uma CONDIÇÃO, que executa um bloco de comandos ou outro, dependendo do resultado de um teste lógico.
 
     let res = document.getElementById('situacao')
