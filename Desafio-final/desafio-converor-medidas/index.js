@@ -1,5 +1,5 @@
 let resTag = document.getElementById("result");
-// Esta função calcula se o ano é bissexto ou não
+// Essa fução escreve todas as conversões ou retorna um erro
 function measurements() {
     let meters = window.prompt("Quantos R$ você tem na carteira?");
     if(verifyInput(meters)){
@@ -22,12 +22,22 @@ function measurements() {
     resTag.innerHTML += `<p> ${data.cm} centímetros (cm) </p>`
     resTag.innerHTML += `<p> ${data.mm} milímetros (mm) </p>`
 }
+
+// Converte Metros em kilometros
 const kilometers = m => m/1000
+// Converte Metros em hectometros
 const hectometers = m => m/100
+// Converte Metros em decametros
 const decameters = m => m/10
+// Converte Metros em decimetros
 const decimeters = m => m * 10
+// Converte Metros em centimetros
 const centimeters = m => m * 100
+// Converte Metros em milimetros
 const millimeter = m => m * 1000
+
+
+// Verifica o valor inserido é um número
 function verifyInput(number) {
     if (isNaN(number) || number == "" || number < 0) {
         return true;

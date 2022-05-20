@@ -1,5 +1,5 @@
 let resTag = document.getElementById("result");
-// Esta função calcula se o ano é bissexto ou não
+// Escreve no HTML o resultado ou retorna um erro
 function bhaskara() {
     let a = window.prompt("Qual é o valor de a?");
     let b = window.prompt("Qual é o valor de b?");
@@ -18,7 +18,7 @@ function bhaskara() {
 
 
 }
-
+// Verifica se os valor inserido pelo usuário realmente é um número
 function verifyInput(number) {
     if (isNaN(number) || number == "" || number < 0) {
         return true;
@@ -26,7 +26,7 @@ function verifyInput(number) {
     return false
 }
 
-
+// Calcula o valor de Delta
 function calDelta(a,b,c){
     let delta = Math.pow(b, 2) - (4 * a * c ) 
     return delta 
