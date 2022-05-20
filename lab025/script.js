@@ -1,4 +1,4 @@
-
+// Já esta funcionando
 function contagem() {
     let saida = document.getElementById('saida')
     let num = Number(document.getElementById('fnum').value)
