@@ -3,7 +3,7 @@
 
 function welcome(){
     let name = window.prompt("Digite seu nome")
-    let age = window.prompt("Digite a sua idade")
+    let age = window.prompt(`Olá ${name} , quantos anos você tem?`)
 
     alert(`Acabei de conhecer o ${name} que tem ${age} de idade`)
 }

@@ -1,9 +1,18 @@
-// Função criada para receber o nome e a idade do usuário!
 
+let resTag = document.getElementById("result")
+// Esta função calcula se o ano é bissexto ou não
+function leapYear(){
+    let year = window.prompt("Qual é o ano que você quer verificar?")
 
-function welcome(){
-    let name = window.prompt("Digite seu nome")
-    let age = window.prompt("Digite a sua idade")
+    if(isNaN(year)|| year == '' || year < 0){
+       alert("Digite um ano válido") 
+       return
+    }
 
-    alert(`Acabei de conhecer o ${name} que tem ${age} de idade`)
+    if((year%400 == 0) || (year%4==0 && year%100!=0)){
+        resTag.innerHTML = `<p> O ano de ${year} é <span style="color: green; background: #b2ffb2"><strong>É BISSEXTO <strong></span> &#9989`
+    }else{
+        resTag.innerHTML = `<p> O ano de ${year} é <span style="color: red; background: #f9a19a"><strong>NÃO É BISSEXTO<strong></span> &#10060`
+    }
+
 }
