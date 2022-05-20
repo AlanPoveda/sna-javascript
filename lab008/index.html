@@ -1,5 +1,9 @@
 
 <!DOCTYPE html>
+<!--Nome: Alan Poveda
+    Data: 20-05-2022
+    Lab: 06
+-->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -19,9 +23,11 @@
 
     <script>
         function calcular() {
-            let num = Number(window('Digite um número: '))
+            // Adicionei o prompt
+            let num = Number(window.prompt('Digite um número: '))
             
-            let res = document.querySelector('section#result')
+            // Id resultado foi modificado
+            let res = document.querySelector('section#resultado')
             res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${num}</strong></p><hr>`
             res.innerHTML += `<p>O seu valor absoluto é ${Math.abs(num)}</p>`
             res.innerHTML += `<p>A sua parte inteira é ${Math.trunc(num)}</p>`
